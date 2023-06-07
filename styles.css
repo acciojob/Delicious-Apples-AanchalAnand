@@ -1,209 +1,115 @@
 /* your code here */
-body
-{
-    background-color:lightgreen;
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#banner
-{
+/* your code here */
+body {
+    background-color: #90ee90;
+  }
+  
+  .product_container {
+    margin: 0px auto;
+    width: fit-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 0 auto; */
-}
-
-#background
-{
-    background-color: antiquewhite;
-    height: 37em;
-    width: 35em;
+    margin-top: 3%;
+  }
+  
+  .product_details {
+    width: 500px;
+    height: 515px;
+    background-color: white;
     display: flex;
+    border-radius: 7px;
+  }
+  
+  .product_image {
+    width: 270px;
+    height: 400px;
+    position: relative;
+    left: 150px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 6px 24px -5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+  }
+  
+  .detail_first {
+    flex: 0.4;
+  }
+  
+  .detail_second {
+    flex: 0.6;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .code_text {
+    font-size: 12px;
+    opacity: 0.3;
+  }
+
+  .cost_text {
+    color: red;
+    font-size: 20px;;
+  }
+
+  .price_text {
+    font-size: 80px;;
+  }
+
+  .color_img:hover {
+    border: 1px solid black;
     border-radius: 5px;
-    /* z-index: 1; */
-}
+    transform: scale(0.9);
+    cursor: pointer;
+  }
 
-/* Left Section */
-#background #left
-{
-    width: 25em;
-    height: inherit;
-}
-
-#background #left #overlap
-{
-    background-color: antiquewhite;
-    width: 275px;
-    height: 540px;
-    /* z-index: 1; */
-    margin-top: 25px;
-    margin-left: -75px;
-    border-radius: 5px;
-    /* border: 1px solid black; */
-    /* padding: 0; */
-    z-index: 3;
-    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-}
-
-#overlap #top #icons
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: lightgreen;
-    z-index: 0;
-    /* border: 1px solid black; */
-}
-
-#overlap #top #imgbanner
-{
-    width: inherit;
-    height: 365px;
-    background-color: lightgreen;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-}
-
-#overlap #top #imgbanner img
-{
-    margin-left: -95px;
-    height: 290px;
-    width: 290px;
-    margin-top: 18px;
-    /* text-align: center; */
-}
-
-#bottom #appleviews
-{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 43px;
-}
-
-#appleviews .views img
-{
-    height: 45px;
-    border: 1px solid lightgray;
-}
-
-/* Right Section */
-#background #right
-{
-    width: inherit;
-    height: inherit;
-    /* border-left: 1px solid black; */
-    /* padding-left: 10px; */
-    padding: 25px;
-    /* margin-top: 10px; */
-}
-
-#right #heading
-{
-    margin-top: 20px;
-    padding: 0;
-    font-size: 1.17em;
-    /* margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
-    font-weight: bold;
-    color: darkslategrey;
-}
-
-#right #byline
-{
+  li {
     font-size: 10px;
-    color: grey;
-    margin-top: 2px;
-    display: block;
-}
+  }
 
-#right .pricediv, #right .pricediv #price
-{
-    color: tomato;
-}
-
-#right .pricediv #price
-{
-    font-size: 60px;
-    font-weight: 200;
-}
-
-#right #colorselector #cs
-{
-    text-transform: uppercase;
-    font-size: 15px;
-    color: grey;
-}
-
-#colorselector #applecolors
-{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
-    padding-right: 10px;
-}
-
-#applecolors .colors img
-{
-    height: 35px;
-    padding: 2px;
-}
-
-#applecolors .selected
-{
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-
-#right #benefits #benefitsheading
-{
-    text-transform: uppercase;
-    font-size: 15px;
-    color: grey;
-}
-
-#right #benefits #benefitslist
-{
-    margin-right: 20px;
-    font-size: 14px;
-    font-weight: 100;
-}
-
-.addcart #addbtn
-{
-    padding: 10px;
-    width: 150px;
-    background-color: tomato;
-    border: none;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+  .add_to_cart_btn {
+    background-color: red;
     color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 25px -5px gray;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+  }
 
+  .top_section {
+    flex: 0.8;
+    background: radial-gradient(#f4f4f4 20%,#adff2f 80%);
+    border-radius: 10px 10px 0px 0px;
+  }
 
-#right .pricediv
-{
-    padding-top: 25px;
-}
+  .bottom_section {
+    flex: 0.2;
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
 
-#right #colorselector
-{
-    padding-top: 35px;
-}
-#right #benefits
-{
-    padding-top: 35px;
-}
+  .main_apple_img {
+    position: absolute;
+    left: -50px;
+    height: 210px;
+    top: 20px;
+  }
 
-#right .addcart
-{
-    padding-top: 35px;
-}
+  .apple_img {
+    border: 0.1px solid gray;
+    transform: scale(0.8);
+  }
+
+  .icon1 {
+    color: white;
+    margin: 10px;
+  }
+
+  .icon2 {
+    color: white;
+    float: right;
+    margin: 10px;
+  }
